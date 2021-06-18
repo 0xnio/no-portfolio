@@ -3,9 +3,17 @@
     <div class="loading-text-mask" :class="{ ready: ready }">
       <div
         class="loading-text-overlay"
-        :style="{ 'animation-delay': delay + 'ms' }"
+        :style="{
+          'animation-delay': delay + 'ms',
+          'animation-duration': duration + 'ms',
+        }"
       ></div>
-      <slot />
+      <div
+        class="slot"
+        :style="{ 'transition-delay': delay + duration / 2 + 'ms' }"
+      >
+        <slot />
+      </div>
     </div>
   </div>
 </template>
@@ -14,15 +22,15 @@
 export default {
   props: {
     delay: {
-      type: String,
-      default: '1000',
+      type: Number,
+      default: 1000,
     },
   },
   data: () => ({
     ready: false,
+    duration: 1300,
   }),
   mounted() {
-    console.log('mounted')
     this.ready = true
   },
 }
@@ -34,22 +42,34 @@ export default {
 }
 .loading-text-overlay {
   @apply block absolute bg-cyan-400 inset-0 -top-2 z-50;
+  transform: translateX(-105%);
+}
+
+.slot {
+  opacity: 0;
+}
+
+.ready .slot {
+  opacity: 1;
 }
 
 .ready .loading-text-overlay {
   animation-name: slide-animation;
   animation-fill-mode: forwards;
-  /* animation-delay: 1000; */
-  animation-duration: 0.65s;
-  animation-timing-function: cubic-bezier(0.694, 0.048, 0.335, 1),
-    cubic-bezier(0.694, 0.048, 0.335, 1);
+  animation-timing-function: cubic-bezier(0.694, 0.048, 0.335, 1);
 }
 
 @keyframes slide-animation {
-  from {
+  0% {
+    transform: translateX(-105%);
+  }
+  30% {
     transform: translateX(0);
   }
-  to {
+  70% {
+    transform: translateX(0);
+  }
+  100% {
     transform: translateX(105%);
   }
 }

@@ -9,7 +9,7 @@
         <TextLoading>
           <h1 class="text-6xl font-bold text-gray-200">Niklas Oberwoerder</h1>
         </TextLoading>
-        <TextLoading delay="1300">
+        <TextLoading :delay="1300">
           <h3 class="mt-3 text-3xl font-semibold text-gray-300">
             ein <Underline>Frontend-Developer</Underline> und
             <Underline>UI/UX Designer</Underline>.
