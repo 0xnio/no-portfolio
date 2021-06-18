@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
-    <StickyInfo />
-    <Navbar />
+    <StickyInfo v-motion-slide-bottom :delay="3000" />
+    <Navbar v-motion-slide-top :delay="3000" />
     <main>
       <Nuxt />
     </main>

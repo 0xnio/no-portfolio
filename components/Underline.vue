@@ -14,7 +14,7 @@ span.highlight {
 }
 
 span.highlight > span {
-  @apply relative z-50;
+  @apply relative z-20;
 }
 
 span.highlight::before {
