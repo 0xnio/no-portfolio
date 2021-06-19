@@ -24,12 +24,12 @@
           </h1>
         </TextLoading>
         <TextLoading :delay="1300">
-          <h3
+          <h2
             class="mt-1 text-xl font-semibold text-gray-300 lg:mt-3 lg:text-3xl"
           >
             ein <Underline>Frontend-Developer</Underline> und
             <Underline>UI/UX Designer</Underline>.
-          </h3>
+          </h2>
         </TextLoading>
       </header>
       <div v-motion-fade :delay="2500">
