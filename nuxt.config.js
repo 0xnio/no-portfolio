@@ -1,19 +1,27 @@
+const description =
+  'Frontend-Developer & UI/UX Designer aus Bielefeld | Vue.js - Nuxt.js - WordPress'
+const color = '#1e293b'
+const name = 'Niklas Oberwoerder'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'no-portfolio',
+    title: `${name} | ${description}`,
     htmlAttrs: {
-      lang: 'en',
+      lang: 'de',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: description,
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -33,6 +41,8 @@ export default {
     '@nuxtjs/tailwindcss',
     // https://www.npmjs.com/package/@nuxtjs/google-fonts
     '@nuxtjs/google-fonts',
+    // https://pwa.nuxtjs.org
+    '@nuxtjs/pwa',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -51,4 +61,25 @@ export default {
   },
 
   loading: false,
+
+  pwa: {
+    meta: {
+      appleStatusBarStyle: 'black-translucent',
+      name,
+      author: name,
+      description,
+      theme_color: color,
+      lang: 'de',
+    },
+    manifest: {
+      name,
+      short_name: 'NO',
+      lang: 'de',
+      description,
+      background_color: color,
+    },
+    workbox: {
+      enabled: false,
+    },
+  },
 }
