@@ -34,10 +34,32 @@
       </header>
       <div v-motion-fade :delay="2500">
         <p class="max-w-2xl leading-loose text-gray-400 mr-7 md:mr-0">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
-          Quisque volutpat mattis eros. <a href="#">HOTSUSHI</a> Nullam
-          malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper
-          suscipit, posuere a, pede.
+          Was das heißt? Ich entwerfe & programmiere Websites und habe darin
+          schon über 10 Jahre Erfahrung gesammelt. Sehr gerne benutze ich
+          <a
+            href="https://www.vuejs.org/"
+            rel="noopener"
+            title="Vue.js Website aufrufen"
+            class="font-mono"
+            >Vue.js</a
+          >
+          /
+          <a
+            href="https://www.nuxtjs.org/"
+            rel="noopener"
+            title="Nuxt.js Website aufrufen"
+            class="font-mono"
+            >Nuxt.js</a
+          >
+          - kenne mich aber auch gut mit
+          <a
+            href="https://wordpress.org/"
+            rel="noopener"
+            title="WordPress Website aufrufen"
+            class="font-mono"
+            >WordPress</a
+          >
+          aus. Ich arbeite in einer Agentur in Bielefeld.
         </p>
         <Button
           href="mailto:mail@niklas-oberwoerder.de"

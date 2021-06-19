@@ -1,7 +1,7 @@
 <template>
   <ul class="sticky-info">
     <li>
-      <a href="#">
+      <a href="mailto:mail@niklas-oberwoerder.de" title="E-Mail senden">
         <svg viewBox="0 0 24.773 19.111">
           <path
             fill="none"
@@ -14,7 +14,12 @@
       </a>
     </li>
     <li>
-      <a href="">
+      <a
+        href="https://twitter.com/plankalql"
+        rel="noopener"
+        target="_blank"
+        title="Twitter Profil"
+      >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20.142">
           <path
             fill="none"
@@ -27,7 +32,12 @@
       </a>
     </li>
     <li>
-      <a href="">
+      <a
+        href="https://github.com/plankalql"
+        rel="noopener"
+        target="_blank"
+        title="GitHub Profil"
+      >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.713 23.049">
           <path
             fill="none"
