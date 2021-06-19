@@ -1,6 +1,6 @@
 <template>
-  <div class="fixed w-full">
-    <Container class="pt-10">
+  <div id="navbar" class="fixed w-full">
+    <Container class="py-8 lg:py-10">
       <Logo />
     </Container>
   </div>
@@ -10,4 +10,8 @@
 export default {}
 </script>
 
-<style></style>
+<style lang="postcss" scoped>
+#navbar {
+  height: var(--navbar-height);
+}
+</style>

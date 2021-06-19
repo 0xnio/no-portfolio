@@ -36,6 +36,7 @@ body {
 }
 
 main {
-  @apply flex flex-grow items-center;
+  @apply flex flex-grow items-stretch;
+  @apply md:items-center;
 }
 </style>

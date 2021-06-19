@@ -48,13 +48,15 @@ export default {}
 
 <style lang="postcss" scoped>
 .sticky-info {
-  @apply fixed w-10 right-10 bottom-0 left-auto z-10 flex flex-col items-center justify-center;
+  @apply fixed w-10 right-5 bottom-0 left-auto z-10 flex flex-col items-center justify-center;
   @apply text-gray-400;
   @apply space-y-5;
+  @apply lg:right-6;
 }
 
 .sticky-info::after {
-  @apply w-px h-32 bg-gray-500 block mt-5;
+  @apply w-px h-12 bg-gray-500 block mt-5;
+  @apply lg:h-32;
   content: '';
 }
 

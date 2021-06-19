@@ -1,5 +1,5 @@
 <template>
-  <Container>
+  <Container class="overflow-x-hidden md:overflow-x-visible">
     <Intro />
   </Container>
 </template>
