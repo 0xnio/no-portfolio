@@ -2,15 +2,15 @@
   <div class="pointer-events-none">
     <div
       id="first"
-      class="filter -left-4 bg-cyan-400 top-0 w-80 h-80 opacity-[9%]"
+      class="filter -left-4 bg-cyan-400 top-0 w-80 h-80 opacity-[11%]"
     ></div>
     <div
       id="second"
-      class="filter left-60 bg-green-400 bottom-0 w-52 h-52 opacity-[8%]"
+      class="filter left-60 bg-green-400 bottom-0 w-52 h-52 opacity-[11%]"
     ></div>
     <div
       id="third"
-      class="filter left-96 bg-cyan-400 top-12 w-64 h-64 opacity-[6%]"
+      class="filter left-96 bg-cyan-400 top-12 w-64 h-64 opacity-[7%]"
     ></div>
   </div>
 </template>
@@ -31,18 +31,18 @@ export default {}
 #third {
   animation-name: move-animation;
   animation-iteration-count: infinite;
-  animation-duration: 6s;
-  animation-timing-function: ease-in-out;
+  animation-duration: 12s;
+  /* animation-timing-function: ease-in-out; */
 }
 
 #second {
-  animation-duration: 8s;
+  animation-duration: 14s;
   animation-delay: 1s;
 }
 
 #third {
-  animation-duration: 9s;
-  animation-delay: 1.5s;
+  animation-duration: 16s;
+  animation-delay: 1.75s;
   animation-direction: alternate;
 }
 
@@ -51,10 +51,10 @@ export default {}
     transform: translate(0px, 0px) scale(1);
   }
   33% {
-    transform: translate(90px, -60px) scale(1.2);
+    transform: translate(26vw, -12vh) scale(1.2);
   }
   66% {
-    transform: translate(-90px, 40px) scale(0.8);
+    transform: translate(-10vw, 30vh) scale(0.8);
   }
   100% {
     transform: translate(0px, 0px) scale(1);
