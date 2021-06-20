@@ -1,5 +1,7 @@
 # My Personal Portfolio
 
+![Vercel](https://img.shields.io/github/deployments/plankalql/no-portfolio/production?label=Vercel)
+
 ## Build Setup
 
 ```bash
