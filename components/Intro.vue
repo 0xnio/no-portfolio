@@ -13,7 +13,7 @@
       "
     >
       <div v-motion-fade class="block font-mono text-cyan-400" :delay="1500">
-        Hey Du <span class="wave" aria-hidden="true">👋</span>, Ich bin
+        Hey <span class="wave" aria-hidden="true">👋</span>, Ich bin
       </div>
       <header>
         <TextLoading>
@@ -34,8 +34,8 @@
       </header>
       <div v-motion-fade :delay="2500">
         <p class="max-w-2xl leading-loose text-gray-400 mr-7 md:mr-0">
-          Was das heißt? Ich entwerfe & programmiere Websites und habe darin
-          schon über 10 Jahre Erfahrung gesammelt. Sehr gerne benutze ich
+          Ich entwerfe & programmiere seit über 10 Jahren Websites. Aktuell
+          benutze ich gerne
           <a
             href="https://www.vuejs.org/"
             rel="noopener"
@@ -43,7 +43,7 @@
             class="font-mono"
             >Vue.js</a
           >
-          /
+          oder
           <a
             href="https://www.nuxtjs.org/"
             rel="noopener"
@@ -51,21 +51,20 @@
             class="font-mono"
             >Nuxt.js</a
           >
-          - kenne mich aber auch gut mit
+          - habe aber auch Erfahrung mit
           <a
             href="https://wordpress.org/"
             rel="noopener"
             title="WordPress Website aufrufen"
             class="font-mono"
             >WordPress</a
-          >
-          aus. Ich arbeite in einer Agentur in Bielefeld.
+          >. Ich arbeite in einer Agentur in Bielefeld.
         </p>
         <Button
           href="mailto:mail@niklas-oberwoerder.de"
           class="inline-block mt-8 lg:mt-10"
         >
-          Sag ma' hallo!
+          Sag mal hallo!
         </Button>
       </div>
     </div>
