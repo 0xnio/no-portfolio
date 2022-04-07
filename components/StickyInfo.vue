@@ -15,7 +15,7 @@
     </li>
     <li>
       <a
-        href="https://twitter.com/plankalql"
+        href="https://twitter.com/0x_nio"
         rel="noopener"
         target="_blank"
         title="Twitter Profil"
@@ -33,7 +33,7 @@
     </li>
     <li>
       <a
-        href="https://github.com/plankalql"
+        href="https://github.com/0xnio"
         rel="noopener"
         target="_blank"
         title="GitHub Profil"
