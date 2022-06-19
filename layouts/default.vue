@@ -1,6 +1,9 @@
 <template>
   <div class="wrapper" :class="{ isReady: isReady }">
     <StickyInfo v-motion-slide-bottom :delay="3000" />
+    <client-only>
+      <Galaxy />
+    </client-only>
     <Navbar v-motion-slide-top :delay="3000" />
     <main>
       <Nuxt />
@@ -14,9 +17,9 @@ export default {
     isReady: false,
   }),
   mounted() {
-    this.isReady = true
+    this.isReady = true;
   },
-}
+};
 </script>
 
 <style lang="postcss">

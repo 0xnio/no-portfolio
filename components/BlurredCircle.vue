@@ -2,15 +2,15 @@
   <div class="pointer-events-none">
     <div
       id="first"
-      class="filter -left-4 bg-cyan-400 top-0 w-80 h-80 opacity-[11%]"
+      class="filter -left-4 bg-cyan-400 top-0 w-80 h-80 opacity-[8%]"
     ></div>
     <div
       id="second"
-      class="filter left-60 bg-green-400 bottom-0 w-52 h-52 opacity-[11%]"
+      class="filter left-60 bg-green-400 bottom-0 w-52 h-52 opacity-[8%]"
     ></div>
     <div
       id="third"
-      class="filter left-96 bg-cyan-400 top-12 w-64 h-64 opacity-[7%]"
+      class="filter left-96 bg-cyan-400 top-12 w-64 h-64 opacity-[6%]"
     ></div>
   </div>
 </template>

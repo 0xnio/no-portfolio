@@ -47,7 +47,9 @@ export default {
   modules: ['nuxt-use-motion'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    transpile:["three"]
+  },
 
   // Google Fonts https://www.npmjs.com/package/@nuxtjs/google-fonts
   googleFonts: {
