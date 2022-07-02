@@ -115,6 +115,17 @@ export default {
       effectComposer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     });
 
+    // Mouse Movement / Cursor
+    const cursor = {
+      x: 0,
+      y: 0
+    };
+
+    window.addEventListener('mousemove', event => {
+      cursor.x = event.clientX / sizes.width - 0.5;
+      cursor.y = event.clientY / sizes.height - 0.5;
+    });
+
     /**
      * Camera
      */
@@ -157,6 +168,7 @@ export default {
      * Animation
      */
     const clock = new THREE.Clock();
+    let prevTime = 0;
 
     const introAnimation = new TWEEN.Tween(camera.position.set(0, -15, 15))
       .to(
@@ -175,6 +187,13 @@ export default {
 
     const tick = () => {
       const elapsedTime = clock.getElapsedTime();
+      const deltaTime = elapsedTime - prevTime;
+      prevTime = elapsedTime;
+
+      // Animate camera by mouse movement on Y axis
+      const parallaxY = - cursor.y * 0.5;
+      camera.position.y += (parallaxY - camera.position.y) * 20 * deltaTime;
+
       TWEEN.update(); // update animations
       uniforms.uTime.value = elapsedTime;
       controls.update();
